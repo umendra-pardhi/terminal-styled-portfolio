@@ -1,0 +1,153 @@
+body {
+  /* background:orangered; */
+  background: rgb(77, 75, 75);
+  background-color: #150361;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23150361' cx='50' cy='0' r='50'/%3E%3Cg fill='%23170b69' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23181471' cx='50' cy='100' r='50'/%3E%3Cg fill='%23191b79' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2281' cx='50' cy='200' r='50'/%3E%3Cg fill='%231b2989' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231b3091' cx='50' cy='300' r='50'/%3E%3Cg fill='%231c3799' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%231c3ea1' cx='50' cy='400' r='50'/%3E%3Cg fill='%231b45a9' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%231b4cb1' cx='50' cy='500' r='50'/%3E%3Cg fill='%231a53b9' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23195ac0' cx='50' cy='600' r='50'/%3E%3Cg fill='%231861c8' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%231669d0' cx='50' cy='700' r='50'/%3E%3Cg fill='%231470d8' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231277e0' cx='50' cy='800' r='50'/%3E%3Cg fill='%230f7fe8' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%230c86f0' cx='50' cy='900' r='50'/%3E%3Cg fill='%23098df7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%230595FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+
+  margin: 0;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  box-sizing: border-box;
+  transition: all 0.5ms ease;
+  /* min-width: 1280px; */
+}
+section {
+  margin: 20px auto;
+  background: #212633;
+  width: 80%;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 0;
+  /* border: 1px solid white; */
+  box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+.top {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-color: #222835;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.top .title {
+  width: 100%;
+  text-align: center;
+}
+.content {
+  padding: 15px 10px;
+  height: 80vh;
+  color: white;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background: url(icons8-kali-linux.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #212633;
+}
+
+.content::-webkit-scrollbar {
+  width: 8px;
+  background-color: #212633;
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #04030f70;
+}
+
+.terminal {
+  width: 100%;
+  overflow: hidden;
+  font-size: 15px;
+}
+#output {
+  padding: 0 10px;
+  margin: 0;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.input-container {
+  display: flex;
+  padding: 0 10px;
+}
+
+.prompt-symbol {
+  color: #257fc7;
+  margin-right: 5px;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 80%;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+  font-size: inherit;
+}
+
+.command-line {
+  color: #257fc7;
+  margin: 5px 0;
+}
+
+.output-line {
+  color: white;
+  margin: 5px;
+}
+
+.dot-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.dot {
+  padding: 10px;
+  margin-right: 5px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 100px;
+}
+
+.top p {
+  display: inline;
+  color: rgb(22, 21, 21);
+}
+.img-c {
+  border-radius: 100%;
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px white;
+}
+
+a {
+  color: rgb(0, 132, 255);
+}
+
+@media(max-width:768px){  
+
+  section{
+    width: 95%;
+  }
+  input{
+    width: 30%;
+  }
+
+}

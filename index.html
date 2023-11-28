@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Hi, I'm Umendra Pardhi | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="copyright" content="Umendra Pardhi, https://umendrapardhi.web.app/ ">
+  <meta name="description" content="Hi, ✋ my name is Umendra, I'm currently third-year engineering student, pursuing B.Tech in Computer Science & Engineering. My mainly focus: - Web Development - Android Development - IoT Development. I have developed some projects on these domains. I keep up with the latest tech trends so that I can be part of making new and exciting things in the computer science world. I'm open to contribute in Open-Source Projects. Feel free to contact me and we'll find out together - how to make your products awesome.">
+
+  <meta property="og:url" content="https://umendrapardhi.web.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hi, I'm Umendra Pardhi">
+  <meta property="og:description" content="Hi, ✋ my name is Umendra, I'm currently third-year engineering student, pursuing B.Tech in Computer Science & Engineering. My mainly focus: - Web Development - Android Development - IoT Development. I have developed some projects on these domains. I keep up with the latest tech trends so that I can be part of making new and exciting things in the computer science world. I'm open to contribute in Open-Source Projects. Feel free to contact me and we'll find out together - how to make your products awesome.">
+  <meta property="og:image" content="https://umendrapardhi.web.app/pp.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="fixwithumend.web.app">
+  <meta property="twitter:url" content="https://umendrapardhi.web.app/">
+  <meta name="twitter:title" content="Hi, I'm Umendra Pardhi">
+  <meta name="twitter:description" content="Hi, ✋ my name is Umendra, I'm currently third-year engineering student, pursuing B.Tech in Computer Science & Engineering. My mainly focus: - Web Development - Android Development - IoT Development. I have developed some projects on these domains. I keep up with the latest tech trends so that I can be part of making new and exciting things in the computer science world. I'm open to contribute in Open-Source Projects. Feel free to contact me and we'll find out together - how to make your products awesome.">
+  <meta name="twitter:image" content="https://umendrapardhi.web.app/pp.png">
+
+    <link rel="icon" type="image/x-icon" href="icons8-linux-terminal.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="back">
+      <div style="border-radius: 10px">
+        <div class="top">
+          <div class="ico-terminal">
+            <img src="icons8-linux-terminal.svg" alt="" height="25px" />
+          </div>
+          <div class="title">
+            <p>
+              <span style="color: #ffffff"
+                >portfolio@<span style="color: aqua">umendra</span>:~</span
+              >
+            </p>
+          </div>
+          <div class="dot-p">
+            <div class="dot" style="background-color: #ff605c"></div>
+            <div class="dot" style="background-color: #ffbd44"></div>
+            <div class="dot" style="background-color: #00ca4e"></div>
+          </div>
+        </div>
+        <div id="f" class="content">
+          <div class="terminal">
+            <pre id="output"></pre>
+            <div class="input-container">
+              <span class="prompt-symbol"
+                >portfolio@<span style="color: aqua">umendra</span>:~$</span
+              >
+              <input spellcheck="false" type="text" id="input" autofocus />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script
+      disable-devtool-auto
+      src="https://cdn.jsdelivr.net/npm/disable-devtool"
+    ></script>
+    <script>
+      if (screen.width <= 1200) {
+        displayOutput(promptSymbol, false);
+        displayOutput(
+          `Welcome to my portfolio!
+<h1>I'm Umendra Pardhi</h1>Type 'help' to see list of available commands...
+        `,
+          true
+        );
+      } else {
+        displayOutput(promptSymbol, false);
+        banner();
+      }
+    </script>
+  </body>
+</html>
